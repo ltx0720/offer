@@ -1,4 +1,4 @@
-package twoP.twoS;
+package P2.S2;
 
 /**
  * @Author ltx

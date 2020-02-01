@@ -1,7 +1,4 @@
-package twoP.twoS;
-
-import java.util.ArrayList;
-import java.util.List;
+package P2.S2;
 
 /**
  * @Author ltx
