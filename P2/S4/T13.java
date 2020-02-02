@@ -5,6 +5,7 @@ package P2.S4;
  * @Date 15:16 2020/2/2
  *
  * 机器人的运动范围  回溯
+ * 一维数组位深克隆，二维及以上位浅克隆
  */
 public class T13 {
 
@@ -16,13 +17,14 @@ public class T13 {
             return;
         }
 
+        System.out.println(x +"-"+y);
         array[x][y] = 1;
         num++;
 
-        getAccessNum(getArrayCloneAndSet(array), x-1, y);
-        getAccessNum(getArrayCloneAndSet(array), x+1, y);
-        getAccessNum(getArrayCloneAndSet(array), x, y-1);
-        getAccessNum(getArrayCloneAndSet(array), x, y+1);
+        getAccessNum(array, x-1, y);
+        getAccessNum(array, x+1, y);
+        getAccessNum(array, x, y-1);
+        getAccessNum(array, x, y+1);
     }
 
     public static int getCoordinateNum(int x, int y){
@@ -39,16 +41,10 @@ public class T13 {
         return n1+n2;
     }
 
-    public static int[][] getArrayCloneAndSet(int[][] array){
-
-        return array.clone();
-    }
-
     public static void main(String[] args) {
-        int[][] array = new int[5][1];
         k = 3;
-
         getAccessNum(array, 0, 0);
         System.out.println(num);
     }
+
 }
