@@ -42,6 +42,7 @@ public class T13 {
     }
 
     public static void main(String[] args) {
+        int[][] array = new int[1][1];
         k = 3;
         getAccessNum(array, 0, 0);
         System.out.println(num);
