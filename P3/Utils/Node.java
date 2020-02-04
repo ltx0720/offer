@@ -1,4 +1,4 @@
-package P2.Utils;
+package P3.Utils;
 
 /**
  * @Author ltx
@@ -12,5 +12,15 @@ public class Node<T> {
     public Node(T data) {
         this.data = data;
         this.next = null;
+    }
+
+    public Node() {
+    }
+
+    public static <T> void print(Node<T> node){
+        while (node != null){
+            System.out.println(node.data);
+            node = node.next;
+        }
     }
 }
