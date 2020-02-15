@@ -1,6 +1,5 @@
-package P6;
+package P6.S3;
 
-import P4.S4.T36;
 import P4.Utils.Tree;
 
 /**
