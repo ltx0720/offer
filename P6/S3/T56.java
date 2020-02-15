@@ -1,4 +1,4 @@
-package P6;
+package P6.S3;
 
 import java.util.Arrays;
 
